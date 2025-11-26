@@ -4,7 +4,7 @@
     "slug": "Sweldo-App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/ps-logo.png",
     "scheme": "sweldoapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,27 +14,28 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/ps-logo.png",
+        "backgroundImage": "./assets/images/ps-logo.png",
+        "monochromeImage": "./assets/images/ps-logo.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "navigationBar": {
         "backgroundColor": "#00000080",
         "barStyle": "light-content"
-      }
+      },
+      "package": "com.omorfos.SweldoApp"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/ps-logo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/ps-logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
@@ -47,6 +48,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d0b88e83-e1e9-49ed-9f08-6ae0f6400407"
+      }
     }
   }
 }
